@@ -32,7 +32,7 @@ provider "oci" {
 provider "oci" {
             alias        = "home-region"
             tenancy-ocid = var.tenancy-ocid
-            region       = lookup(data.oci-identity-regions.home-region.regions[0], "name"
+            region       = lookup(data.oci-identity-regions.home-region.regions[0], "name")
 }
 
 provider "oci" {
